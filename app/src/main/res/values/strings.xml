@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">Island</string>
+    <string name="accessibility_description">Lets Island draw the Dynamic Island above the status bar. It does not read your screen.</string>
+</resources>
