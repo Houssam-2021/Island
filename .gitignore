@@ -4,3 +4,19 @@ build/
 local.properties
 *.apk
 .idea/
+
+# --- signing material: NEVER commit. Private keys live outside the repo in ~/.houseli-keystore/ ---
+*.jks
+*.keystore
+*.p12
+*.pfx
+*.pem
+*.key
+keystore.properties
+*.keystore.properties
+signing.properties
+local.properties
+# unsigned/signed build outputs are published from GitHub Releases, not from git
+*.apk
+*.aab
+*.idsig

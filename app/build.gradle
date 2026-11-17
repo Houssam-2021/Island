@@ -12,8 +12,8 @@ android {
         applicationId "com.blurify.island"
         minSdk 30
         targetSdk 36
-        versionCode 1
-        versionName "1.0"
+        versionCode 2
+        versionName "1.0.1"
     }
 
     compileOptions {
@@ -27,6 +27,16 @@ android {
 
     buildFeatures {
         compose true
+    }
+
+    // Release builds are produced UNSIGNED on purpose: no key, password or keystore path lives in this repository.
+    // Sign the result with tools/sign_release.py, which reads the private key from outside the repo.
+    buildTypes {
+        release {
+            debuggable false
+            minifyEnabled false
+            signingConfig null
+        }
     }
 }
 
